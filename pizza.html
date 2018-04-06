@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Castle</title>
+  </head>
+  <link rel="stylesheet" href="css/styles.css">
+  <body>
+    <section class="container">
+      <div id="pizza-home">
+        <div class = "nameRestaurant">Pizza Castle</div>
+        <div class = "tagRestaurant">The Ultimate Gastronomic Delight !!!</div>
+        <div class="p_button order_butn">Place Your Order</div>
+      </div>
+      <div class="menu_page display-none">
+        <nav>
+          <div class="pizza selected">Pizza</div>
+          <div class="sides">Sides & Desserts</div>
+          <div class="extras">Extras</div>
+          <div class="total_price">Total Price:<span id="amount">Rs 0</span></div>
+        </nav>
+        <article>
+          <div class="pizza_menu">
+            <div class="pizza_header">
+              <div class="pizza_veg">
+                <span class="pizza_veg_text">Vegeteranian</span>
+                <div class="pizza_veg_content">
+                  <div id="pizza_veg_image"></div>
+                  <div class="p_button veg_butn">Customize Now</div>
+                </div>
+              </div>
+              <div class="pizza_non-veg">
+                <span class="pizza_non_veg_text">Non-Vegeteranian</span>
+                <div class="pizza_non_veg_content">
+                  <div id="pizza_non_veg_image"></div>
+                  <div class="p_button non_veg_butn">Customize Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class ="customize">
+            <div class ="customizePizzaLeft">
+              <div class="pizza_veg_supreme">
+                <span class="pizza_veg_text">Supreme Veg Pizza</span>
+                <div class="pizza_veg_content_supreme">
+                  <div id="pizza_supreme_veg_image"></div>
+                </div>
+              </div>
+            </div>
+            <div class ="customizePizzaRight">
+              <div>
+                <div class="pizz_acc">Base<span class="required">*</span></div>
+                <div class="pizza_base">
+                  <ul class="baseType">
+                    <li class="cust_selected">Normal</li>
+                    <li>Thin Crust</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="pizz_acc">Toppings (Max 3)<span class="required">*</span></div>
+                <div class="pizza_toppings display-none">
+                    <ul class="toppingsType">
+                      <li>Anchovies</li>
+                      <li>Bacon</li>
+                      <li>Canadian Bacon</li>
+                      <li>Chicken</li>
+                      <li>Italian Sausage</li>
+                      <li>Sausage</li>
+                      <li>Pepperoni</li>
+                    </ul>
+                </div>
+              </div>
+              <div>
+                <div class="pizz_acc">Add Veggies (Max 5)<span class="required">*</span></div>
+                <div class="pizza_veggies display-none">
+                  <ul class="veggiesType">
+                    <li>Green Pepper</li>
+                    <li>Mushrooms</li>
+                    <li>Onions</li>
+                    <li>Tomatoes</li>
+                    <li>Banana Peppers</li>
+                    <li>Pineapple Tidbits</li>
+                    <li>Ripe Olives</li>
+                    <li>Green Olives</li>
+                    <li>Jalapeno Peppers</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="pizz_acc">Cheese (Any 1)<span class="required">*</span></div>
+                <div class="pizza_cheese display-none">
+                  <ul class="cheeseType">
+                    <li>Parmesan/Romano</li>
+                    <li>Three Cheese Blend</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="pizz_acc">Sauces (Min.1)<span class="required">*</span></div>
+                <div class="pizza_sauces display-none">
+                  <ul class="sauceType">
+                    <li>Chicken BBQ Pizza Sauce</li>
+                    <li>Ranch Sauce</li>
+                    <li>Spinach Alfredo Sauce</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cart p_button display-none">Checkout</div>
+                <div class="checkout p_button">Add To Cart</div>
+            </div>
+        </article>
+
+          <article class ="extras_pizza">
+              <div class ="extrasPizzaLeft">
+                <div class="extras_veg_supreme">
+                  <span class="extras_veg_text">Extra Sauces</span>
+                  <div class="extras_veg_content_supreme">
+                    <div id="extras_supreme_veg_image"></div>
+                  </div>
+                </div>
+              </div>
+              <div class ="extrasPizzaRight">
+                <div>
+                  <div class="extras_acc">Sauces (No Max.Limit)</div>
+                  <div class="extras_veggies">
+                      <ul class="extrasType">
+                        <li>Pepperoncia</li>
+                        <li>BBQ Dipping Sauce</li>
+                        <li>Blue Cheese Dipping Sauce</li>
+                        <li>Buffalo Dipping Sauce</li>
+                        <li>Cheese Dipping Sauce</li>
+                        <li>Garlic Sauce</li>
+                        <li>Garlic Parmesan Sauce</li>
+                        <li>Honey Chipotle Sauce</li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="cart p_button display-none">Checkout</div>
+            <div class="checkout p_button">Add To Cart</div>
+          </article>
+          <article class="sides_D">
+            <div class ="sidesLeft">
+                <div class="sides_desserts">
+                  <span class="sides_text">Sides & Desserts</span>
+                  <div class="sides_content">
+                    <div id="sides_image"></div>
+                  </div>
+                </div>
+            </div>
+            <div class ="sidesRight">
+              <div>
+                <div class="sides_acc">Sides & Deserts</div>
+                <div class="sidesDessert_content">
+                    <ul class="sidesType">
+                      <li>Chicken Poppers</li>
+                      <li>Chicken Wings(Roasted)</li>
+                      <li>Chocolate Chip Cookie</li>
+                      <li>Double Chocolate Chip Brownie</li>
+                      <li>Pepperoncia</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <div class="cart p_button display-none">Checkout</div>
+            <div class="checkout p_button">Add To Cart</div>
+          </article>
+      </div>
+      <div class="checkout_page">
+        <div class="checkout_box">
+          <div class="checkout-text">Your total payable amount is Rs <span class="amount"></span></div>
+          <div class=" place_order p_button">Place your Order</div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-1.11.3.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <script src="js/item_price.js" charset="utf-8"></script>
+  </body>
+</html>

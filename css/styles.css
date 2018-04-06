@@ -1,0 +1,276 @@
+body {
+  font-family: 'Calibri';
+  margin: 0;
+  overflow-y: hidden;
+  min-width: 300px;
+}
+.nameRestaurant{
+    font-size: 60px;
+    font-family: 'Calibri';
+    color: rgb(247, 244, 244);
+    padding-top: 75px;
+    text-align: center;
+    font-weight: bolder;
+}
+.tagRestaurant{
+    font-size: 25px;
+    font-family: 'Calibri';
+    color: rgb(16, 16, 16);
+    text-align: center;
+    font-weight: bold;
+
+ }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  height: 980px;
+}
+
+#pizza-home {
+  background: url("../images/home_pizza_img.jpg") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+#pizza_veg_image {
+  background: url("../images/veggie_pizza.png") no-repeat;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+#pizza_non_veg_image {
+  background: url("../images/non_veg_pizza.png") no-repeat;
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.p_button {
+  text-align: center;
+  border: 1px solid white;
+  width: 130px;
+  color: white;
+  vertical-align: middle;
+  height: 20px;
+  cursor: pointer;
+  padding: 5px 0px 5px 0px;
+  background: green;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.order_butn {
+  position: relative;
+  top: 220px;
+  margin: auto;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.menu_page {
+  width: 100%;
+  height: 100%;
+  background: rgba(206, 206, 206, 0.25);
+}
+
+nav {
+  display: flex;
+  background: rgb(25, 128, 175);
+  color: #fff;
+  font: 20px/58px TradeGothicLTStd-BdCn20;
+  box-shadow: 0px 10px 5px rgba(136, 136, 136,0.52);
+}
+
+.pizza,.sides,.extras {
+  flex: 0.3;
+  padding-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.total_price {
+  flex: 1;
+  text-align: right;
+  margin-right: 90px;
+  cursor: pointer;
+}
+
+.pizza:hover:not(.selected),.sides:hover:not(.selected),.extras:hover:not(.selected) {
+  background: rgb(91, 177, 216);
+}
+
+.selected {
+  background: #e31836;
+}
+
+.pizza_menu {
+  padding-top: 20px
+}
+
+.pizza_header {
+  display: flex;
+}
+
+.pizza_veg,.pizza_non-veg {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.pizza_veg {
+  margin-left: 16%;
+}
+
+.pizza_veg_text,.pizza_non_veg_text,.extras_veg_text,.sides_text{
+  color: #0baf7a;
+  font-size: 24px;
+  text-indent: 60px;
+  display: inline-block;
+}
+
+.pizza_veg_content .p_button,.pizza_non_veg_content .p_button {
+  margin-left: 10%;
+}
+#pizza_supreme_veg_image {
+  background: url(../images/supreme_veg.jpg) no-repeat;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+#extras_supreme_veg_image {
+  background: url(../images/sause.jpg) no-repeat;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+#sides_image {
+  background: url(../images/sides_img.png) no-repeat;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+.customize,.extras_pizza{
+  border-bottom: 0px;
+  position: relative;
+  border: 1px solid #ececec;
+  padding: 20px;
+}
+.customizePizzaLeft,.baseType li,.toppingsType li,.veggiesType li,.cheeseType li,.sauceType li,.extrasPizzaLeft,.extrasType li,.sidesLeft,.extrasType li{
+  flex:1;
+}
+li{
+  list-style: none;
+  color: grey;
+  cursor:pointer;
+  padding-right: 10px;
+}
+.customizePizzaRight,.extrasPizzaRight,.sidesRight{
+  flex:1;
+  margin-right: 5%;
+}
+.pizz_acc,.extras_acc,.sides_acc{
+  padding: 10px 25px 7px;
+  background-color: #0079ae;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+}
+.baseType,.toppingsType,.veggiesType,.cheeseType,.sauceType{
+  display: flex;
+}
+.pizza_base,.pizza_toppings,.pizza_veggies,.pizza_cheese,.pizza_sauces,.extras_veggies,.sidesDessert_content{
+      border: 1px solid #e5e5e5;
+}
+.cust_selected,.veg_selected,.veggies_selected,.cheese_selected,.sauce_selected,.extras_selected,.sides_selected{
+  color: rgba(110, 216, 99, 0.98);
+  font-weight: bold;
+}
+.pointer_event{
+  pointer-events: none;
+}
+.checkout{
+  position: absolute;
+  top: 90%;
+  left: 84%;
+}
+.sides_desserts{
+  padding-top: 20px;
+}
+.extrasType li,.sidesType li{
+  border: 1px solid #ececec;
+  padding: 11px;
+  border-radius: 6px;
+  width: 190px;
+  margin-bottom: 5px;
+}
+.cart{
+  position: absolute;
+  top: 90%;
+  left:50%;
+  margin-left: 20px;
+}
+.checkout_page {
+  margin: 30px;
+  width: 40%;
+  min-width: 300px;
+  height: 200px;
+  padding: 50px;
+  background: hsla(0, 0%, 50%, 0.12);
+}
+.checkout-text{
+  color: green;
+  font-size: 1.4em;
+}
+.required{
+  color:red;
+}
+.place_order{
+  margin-top: 50px;
+}
+.sidesRight,.extrasPizzaRight{
+  margin-top: 70px;
+  margin-left: 2%;
+}
+.extrasPizzaRight{
+    margin-top: 35px;
+}
+@media screen and (max-width: 1247px) {
+  .menu_page nav,.pizza_veg_text,.pizza_non_veg_text,.p_button,.sides_text,.extras_veg_text{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .customizePizzaRight{
+    flex: 0.5;
+    margin-right: 0%;
+  }
+}
+@media screen and (max-width: 915px) {
+  .sides{
+    flex: 0.6;
+  }
+  .pizza_veg{
+    margin-left: 8%;
+  }
+}
+@media screen and (max-width: 795px) {
+  .checkout{
+    left: 78%;
+  }
+}
+@media screen and (max-width: 615px) {
+  .pizza_veg{
+    margin-left: 1%;
+  }
+}
